@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     <span style="display: block;margin-bottom: 15px;text-align: right;">Просмотров:${countVisits2++}</span><br>
     <a href="/" style="display: block;text-align: center;color: blue;font-weight: 700">Ссылка на страницу/</a>`);
   } else {
-    res.writeHead(200, {
+    res.writeHead(404, {
       'Content-Type': "text/html; charset=UTF-8"
     });
     res.end('<h1>Страница не найдена!</h1>');
