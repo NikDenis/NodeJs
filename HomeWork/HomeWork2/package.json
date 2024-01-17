@@ -1,0 +1,11 @@
+{
+  "name": "generate_password_random",
+  "version": "1.0.0",
+  "description": "Generate random passwords",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Denis Nikishkov",
+  "license": "ISC"
+}
