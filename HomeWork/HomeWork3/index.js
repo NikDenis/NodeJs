@@ -19,19 +19,19 @@ function SaveCounter(url) {
 }
 
 app.get('/', (req, res) => {
+  SaveCounter('/');
   res.send(`
   <h1 style="text-align: center;">Главная страница</h1><br>
   <span style="display: block;margin-bottom: 15px;text-align: right;">Просмотров:${counterVisits.urlIndex}</span><br>
   <a href="/about" style="display: block;text-align: center;color: blue;font-weight: 700">Ссылка на страницу/about</a>`);
-  SaveCounter('/');
 })
 
 app.get('/about', (req, res) => {
+  SaveCounter('/about');
   res.send(`
   <h1 style="text-align: center;">Cтраница о нас</h1><br>
   <span style="display: block;margin-bottom: 15px;text-align: right;">Просмотров:${counterVisits.urlAbout}</span><br>
   <a href="/" style="display: block;text-align: center;color: blue;font-weight: 700">Ссылка на главную страницу</a>`);
-  SaveCounter('/about');
 })
 
 const port = 3000;
